@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MYViewController.h
 //  MYLabelSpaceAndWordSpace
 //
 //  Created by mengdy on 17/11/23.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface MYViewController : UIViewController
 
 @end
-

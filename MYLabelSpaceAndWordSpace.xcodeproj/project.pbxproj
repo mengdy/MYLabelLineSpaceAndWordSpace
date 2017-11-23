@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		BB55D2181FC697AC002970CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB55D2171FC697AC002970CC /* main.m */; };
 		BB55D21B1FC697AC002970CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB55D21A1FC697AC002970CC /* AppDelegate.m */; };
-		BB55D21E1FC697AC002970CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB55D21D1FC697AC002970CC /* ViewController.m */; };
 		BB55D2211FC697AC002970CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB55D21F1FC697AC002970CC /* Main.storyboard */; };
 		BB55D2231FC697AC002970CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB55D2221FC697AC002970CC /* Assets.xcassets */; };
 		BB55D2261FC697AC002970CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB55D2241FC697AC002970CC /* LaunchScreen.storyboard */; };
 		BB55D2311FC697AC002970CC /* MYLabelSpaceAndWordSpaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB55D2301FC697AC002970CC /* MYLabelSpaceAndWordSpaceTests.m */; };
 		BB55D23C1FC697AC002970CC /* MYLabelSpaceAndWordSpaceUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB55D23B1FC697AC002970CC /* MYLabelSpaceAndWordSpaceUITests.m */; };
+		BB55D24B1FC697CE002970CC /* MYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB55D24A1FC697CE002970CC /* MYViewController.m */; };
+		BB55D24F1FC69A46002970CC /* UIColor+Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = BB55D24E1FC69A46002970CC /* UIColor+Expanded.m */; };
+		BB55D2521FC69B5E002970CC /* UILabel+MYChangeLineSpaceAndWordSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = BB55D2511FC69B5E002970CC /* UILabel+MYChangeLineSpaceAndWordSpace.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +41,6 @@
 		BB55D2171FC697AC002970CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BB55D2191FC697AC002970CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BB55D21A1FC697AC002970CC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BB55D21C1FC697AC002970CC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BB55D21D1FC697AC002970CC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BB55D2201FC697AC002970CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB55D2221FC697AC002970CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB55D2251FC697AC002970CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +51,12 @@
 		BB55D2371FC697AC002970CC /* MYLabelSpaceAndWordSpaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MYLabelSpaceAndWordSpaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB55D23B1FC697AC002970CC /* MYLabelSpaceAndWordSpaceUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYLabelSpaceAndWordSpaceUITests.m; sourceTree = "<group>"; };
 		BB55D23D1FC697AC002970CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB55D2491FC697CE002970CC /* MYViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYViewController.h; sourceTree = "<group>"; };
+		BB55D24A1FC697CE002970CC /* MYViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYViewController.m; sourceTree = "<group>"; };
+		BB55D24D1FC69A3F002970CC /* UIColor+Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Expanded.h"; sourceTree = "<group>"; };
+		BB55D24E1FC69A46002970CC /* UIColor+Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Expanded.m"; sourceTree = "<group>"; };
+		BB55D2501FC69B5E002970CC /* UILabel+MYChangeLineSpaceAndWordSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+MYChangeLineSpaceAndWordSpace.h"; sourceTree = "<group>"; };
+		BB55D2511FC69B5E002970CC /* UILabel+MYChangeLineSpaceAndWordSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+MYChangeLineSpaceAndWordSpace.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +107,11 @@
 		BB55D2151FC697AC002970CC /* MYLabelSpaceAndWordSpace */ = {
 			isa = PBXGroup;
 			children = (
+				BB55D24C1FC69A1A002970CC /* MYCategory */,
 				BB55D2191FC697AC002970CC /* AppDelegate.h */,
 				BB55D21A1FC697AC002970CC /* AppDelegate.m */,
-				BB55D21C1FC697AC002970CC /* ViewController.h */,
-				BB55D21D1FC697AC002970CC /* ViewController.m */,
+				BB55D2491FC697CE002970CC /* MYViewController.h */,
+				BB55D24A1FC697CE002970CC /* MYViewController.m */,
 				BB55D21F1FC697AC002970CC /* Main.storyboard */,
 				BB55D2221FC697AC002970CC /* Assets.xcassets */,
 				BB55D2241FC697AC002970CC /* LaunchScreen.storyboard */,
@@ -138,6 +145,17 @@
 				BB55D23D1FC697AC002970CC /* Info.plist */,
 			);
 			path = MYLabelSpaceAndWordSpaceUITests;
+			sourceTree = "<group>";
+		};
+		BB55D24C1FC69A1A002970CC /* MYCategory */ = {
+			isa = PBXGroup;
+			children = (
+				BB55D24D1FC69A3F002970CC /* UIColor+Expanded.h */,
+				BB55D24E1FC69A46002970CC /* UIColor+Expanded.m */,
+				BB55D2501FC69B5E002970CC /* UILabel+MYChangeLineSpaceAndWordSpace.h */,
+				BB55D2511FC69B5E002970CC /* UILabel+MYChangeLineSpaceAndWordSpace.m */,
+			);
+			path = MYCategory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,9 +291,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB55D21E1FC697AC002970CC /* ViewController.m in Sources */,
+				BB55D24B1FC697CE002970CC /* MYViewController.m in Sources */,
 				BB55D21B1FC697AC002970CC /* AppDelegate.m in Sources */,
+				BB55D24F1FC69A46002970CC /* UIColor+Expanded.m in Sources */,
 				BB55D2181FC697AC002970CC /* main.m in Sources */,
+				BB55D2521FC69B5E002970CC /* UILabel+MYChangeLineSpaceAndWordSpace.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
