@@ -9,6 +9,9 @@
 #import "MYViewController.h"
 #import "UIColor+Expanded.h"
 #import "UILabel+MYChangeLineSpaceAndWordSpace.h"
+#import "NSString+MYAdditions.h"
+#import "MYTableView.h"
+
 
 /*-------------------- 屏幕适配 -----------------------------*/
 /** 屏幕高度 */
@@ -19,6 +22,7 @@
 #define kScreen_H_Scale (kScreenHeight*1.0/667)
 /** 宽度比例 */
 #define kScreen_W_Scale (kScreenWidth/375)
+
 
 
 
@@ -35,10 +39,17 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor colorWithHexString:@"fafafa"];
 
-    [self.view addSubview:self.showBtn];
-    [self.view addSubview:self.showLabel];
+//    [self.view addSubview:self.showBtn];
+//    [self.view addSubview:self.showLabel];
     
-}
+    
+        
+    
+    MYTableView *table = [[MYTableView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight - 0)];
+    table.backgroundColor = [UIColor grayColor];
+    [self.view addSubview:table];
+    
+ }
 
 
 -(UIButton *)showBtn{
@@ -74,13 +85,13 @@
 -(void)showLabelContent{
 
     
-    self.showLabel.text = @"我们知道在一个类中用@property声明属性，编译器会自动帮我们生成_成员变量和setter/getter，但分类的指针结构体中，根本没有属性列表。所以在分类中用@property声明属性，既无法生成_成员变量也无法生成setter/getter";
+    self.showLabel.text = @"我不是说这种态度不可取，只是你有没有想过，如果如你所言看重的是态度，那么只要我们不停努力，不到人生的最后时刻，就不能说我们没有完美的可能，既然胜负未分，为何要提前羞愧？";
     
      [self.showLabel sizeWithSt:self.showLabel.text font:16.f frame:self.showLabel.frame];
     //修改行间距
     [UILabel changeLineSpaceForLabel:_showLabel WithSpace:20];
     //修改字与字之间的距离
-    [UILabel changeWordSpaceForLabel:_showLabel WithSpace:10];
+    [UILabel changeWordSpaceForLabel:_showLabel WithSpace:5];
 
 
 }

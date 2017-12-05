@@ -34,5 +34,7 @@
  * 修改某些字体的颜色
  */
 
+@property (nonatomic,copy)NSString *nameWithSetterGetter;
+
 
 @end

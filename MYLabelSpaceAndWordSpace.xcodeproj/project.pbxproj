@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB2CD5A01FD6818D001BE0AB /* NSString+MYAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2CD59F1FD6818D001BE0AB /* NSString+MYAdditions.m */; };
+		BB2CD5A31FD68B2F001BE0AB /* MYTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2CD5A21FD68B2F001BE0AB /* MYTableView.m */; };
+		BB2CD5A91FD69357001BE0AB /* MYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2CD5A81FD69357001BE0AB /* MYTableViewCell.m */; };
 		BB55D2181FC697AC002970CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB55D2171FC697AC002970CC /* main.m */; };
 		BB55D21B1FC697AC002970CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB55D21A1FC697AC002970CC /* AppDelegate.m */; };
 		BB55D2211FC697AC002970CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB55D21F1FC697AC002970CC /* Main.storyboard */; };
@@ -37,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BB2CD59E1FD6818D001BE0AB /* NSString+MYAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MYAdditions.h"; sourceTree = "<group>"; };
+		BB2CD59F1FD6818D001BE0AB /* NSString+MYAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MYAdditions.m"; sourceTree = "<group>"; };
+		BB2CD5A11FD68B2F001BE0AB /* MYTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYTableView.h; sourceTree = "<group>"; };
+		BB2CD5A21FD68B2F001BE0AB /* MYTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYTableView.m; sourceTree = "<group>"; };
+		BB2CD5A71FD69357001BE0AB /* MYTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYTableViewCell.h; sourceTree = "<group>"; };
+		BB2CD5A81FD69357001BE0AB /* MYTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYTableViewCell.m; sourceTree = "<group>"; };
 		BB55D2131FC697AC002970CC /* MYLabelSpaceAndWordSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYLabelSpaceAndWordSpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB55D2171FC697AC002970CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BB55D2191FC697AC002970CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -112,6 +121,10 @@
 				BB55D21A1FC697AC002970CC /* AppDelegate.m */,
 				BB55D2491FC697CE002970CC /* MYViewController.h */,
 				BB55D24A1FC697CE002970CC /* MYViewController.m */,
+				BB2CD5A11FD68B2F001BE0AB /* MYTableView.h */,
+				BB2CD5A21FD68B2F001BE0AB /* MYTableView.m */,
+				BB2CD5A71FD69357001BE0AB /* MYTableViewCell.h */,
+				BB2CD5A81FD69357001BE0AB /* MYTableViewCell.m */,
 				BB55D21F1FC697AC002970CC /* Main.storyboard */,
 				BB55D2221FC697AC002970CC /* Assets.xcassets */,
 				BB55D2241FC697AC002970CC /* LaunchScreen.storyboard */,
@@ -154,6 +167,8 @@
 				BB55D24E1FC69A46002970CC /* UIColor+Expanded.m */,
 				BB55D2501FC69B5E002970CC /* UILabel+MYChangeLineSpaceAndWordSpace.h */,
 				BB55D2511FC69B5E002970CC /* UILabel+MYChangeLineSpaceAndWordSpace.m */,
+				BB2CD59E1FD6818D001BE0AB /* NSString+MYAdditions.h */,
+				BB2CD59F1FD6818D001BE0AB /* NSString+MYAdditions.m */,
 			);
 			path = MYCategory;
 			sourceTree = "<group>";
@@ -291,11 +306,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB2CD5A31FD68B2F001BE0AB /* MYTableView.m in Sources */,
 				BB55D24B1FC697CE002970CC /* MYViewController.m in Sources */,
 				BB55D21B1FC697AC002970CC /* AppDelegate.m in Sources */,
 				BB55D24F1FC69A46002970CC /* UIColor+Expanded.m in Sources */,
+				BB2CD5A91FD69357001BE0AB /* MYTableViewCell.m in Sources */,
 				BB55D2181FC697AC002970CC /* main.m in Sources */,
 				BB55D2521FC69B5E002970CC /* UILabel+MYChangeLineSpaceAndWordSpace.m in Sources */,
+				BB2CD5A01FD6818D001BE0AB /* NSString+MYAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,6 +545,7 @@
 				BB55D2421FC697AC002970CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BB55D2431FC697AC002970CC /* Build configuration list for PBXNativeTarget "MYLabelSpaceAndWordSpaceTests" */ = {
 			isa = XCConfigurationList;
@@ -535,6 +554,7 @@
 				BB55D2451FC697AC002970CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BB55D2461FC697AC002970CC /* Build configuration list for PBXNativeTarget "MYLabelSpaceAndWordSpaceUITests" */ = {
 			isa = XCConfigurationList;
@@ -543,6 +563,7 @@
 				BB55D2481FC697AC002970CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

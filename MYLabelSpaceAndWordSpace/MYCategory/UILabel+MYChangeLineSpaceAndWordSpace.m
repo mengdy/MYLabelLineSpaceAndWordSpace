@@ -9,6 +9,10 @@
 #import "UILabel+MYChangeLineSpaceAndWordSpace.h"
 #import "UIColor+Expanded.h"
 
+//在分类中添加属性
+#import <objc/runtime.h>
+static NSString *nameWithSetterGetterKey = @"nameWithSetterGetterKey";
+
 
 @implementation UILabel (MYChangeLineSpaceAndWordSpace)
 
@@ -57,6 +61,7 @@
 
     
     self.frame = CGRectMake(frame.origin.x, frame.origin.y, frame.size.width, rect.size.height+font);
+
 }
 
 
@@ -79,6 +84,19 @@
     }
     return hintString;
 }
+
+//分类中系统无法自动添加setter/getter方法，要想在分类中添加属性 需要自己手动添加setter/getter方法，此方法声明后，在其他类中也是可以正常使用的
+
+-(void)setNameWithSetterGetter:(NSString *)nameWithSetterGetter{
+
+    objc_setAssociatedObject(self, &nameWithSetterGetterKey, nameWithSetterGetter, OBJC_ASSOCIATION_COPY);
+
+}
+
+- (NSString *)nameWithSetterGetter {
+    return objc_getAssociatedObject(self, &nameWithSetterGetterKey);
+}
+
 
 
 
